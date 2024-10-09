@@ -1,0 +1,230 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+html {
+  font-size: 10px;
+}
+body {
+  font-family: "Outfit", sans-serif;
+  font-size: 1.8rem;
+  background-color: black;
+  color: white;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.nft-preview {
+  background-color: hsl(217, 54%, 11%);
+  width: 35rem;
+  height: 100vh;
+  margin: 0 auto;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.card-component {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 27rem;
+  height: 45rem;
+  border-radius: 1rem;
+  background-color: hsl(216, 50%, 16%);
+  margin: auto;
+}
+
+.cube-image {
+  max-width: 100%;
+  max-height: 100%;
+  margin-bottom: 1rem;
+  margin-top: 0;
+  border-radius: 1rem;
+}
+.cube-image:hover {
+  opacity: 0.6;
+}
+.cube-box {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  cursor: pointer;
+  width: 23rem;
+  height: 23rem;
+}
+.view-icon-box img {
+  max-width: 100%;
+  max-height: 100%;
+}
+.view-icon-box {
+  position: absolute;
+  opacity: 0;
+  height: 30px;
+  width: 30px;
+
+  cursor: pointer;
+}
+.cube-box:active .view-icon-box {
+  cursor: pointer;
+  opacity: 1;
+}
+.cube-box:hover .view-icon-box {
+  cursor: pointer;
+  opacity: 1;
+}
+.cube-box:active {
+  background-color: aqua;
+  opacity: 1;
+}
+.head-box {
+  display: flex;
+  justify-content: start;
+  width: 23rem;
+}
+.heading {
+  margin-top: 1rem;
+  font-size: 1.8rem;
+  cursor: pointer;
+}
+.heading:active {
+  color: aqua;
+  cursor: pointer;
+}
+.para-box {
+  display: flex;
+  justify-content: start;
+  align-items: center;
+  width: 23rem;
+  margin-top: 1rem;
+}
+.para {
+  font-size: 1.4rem;
+  color: hsl(215, 51%, 70%);
+  font-weight: 300;
+}
+.ether-time {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  width: 23rem;
+  margin-top: 1rem;
+  margin-bottom: 1.5rem;
+  padding: 0.5rem;
+  font-size: 1.3rem;
+}
+.ether {
+  display: flex;
+  justify-content: start;
+  color: cyan;
+  font-size: 1.4rem;
+  font-weight: 500;
+  width: 11rem;
+}
+.clock {
+  font-size: 1.4rem;
+  display: flex;
+  color: hsl(215, 51%, 70%);
+  justify-content: end;
+  width: 11rem;
+}
+.auther-image {
+  max-width: 100%;
+  max-height: 100%;
+  border: 0.2rem solid white;
+  border-radius: 50%;
+}
+.image-box {
+  width: 3rem;
+  height: 3rem;
+}
+.auther {
+  display: flex;
+  justify-content: start;
+  width: 23rem;
+  font-size: 1.4rem;
+  margin-top: 1.5rem;
+}
+.auther-name {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding-left: 1rem;
+}
+.auther-name span.name-content {
+  color: hsl(215, 51%, 70%);
+  margin-right: 0.1rem;
+}
+hr {
+  border: 1px solid hsl(215, 51%, 70%);
+  opacity: 0.2;
+}
+.ether-image {
+  margin-right: 1rem;
+}
+
+.clock-image {
+  margin-right: 1rem;
+}
+.name {
+  cursor: pointer;
+}
+.name:active {
+  color: aqua;
+}
+
+@media (min-width: 320px) and (max-width: 480px) {
+}
+@media (min-width: 481px) and (max-width: 760px) {
+}
+@media (min-width: 761px) and (max-width: 1024px) {
+  body {
+    font-family: "Outfit", sans-serif;
+    font-size: 1.8rem;
+    background-color: black;
+    color: white;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    align-content: center;
+  }
+
+  .nft-preview {
+    background-color: hsl(217, 54%, 11%);
+    width: 80vw;
+    height: 90vh;
+    margin: auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+}
+@media (min-width: 1025px) {
+  body {
+    font-family: "Outfit", sans-serif;
+    font-size: 1.8rem;
+    background-color: black;
+    color: white;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    align-content: center;
+  }
+
+  .nft-preview {
+    background-color: hsl(217, 54%, 11%);
+    width: 80vw;
+    height: 90vh;
+    margin: auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+}
